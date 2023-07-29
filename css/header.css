@@ -44,11 +44,11 @@ body {
 }
 
 .header_nav a:hover {
-    padding: 1px 30px;
-    /* color: white; */
+    padding: 1px 20px;
+    /* color: purple; */
     /* background-color: black; */
     /* border: solid black; */
-    box-shadow: -5px 5px peru;
+    box-shadow: -5px 5px purple;
 }
 
 .header_anchors {
@@ -64,22 +64,7 @@ body {
 }
 
 /* ------------------------------------------------ */
-/*                          MAIN                    */
+/*                          END                     */
 /* ------------------------------------------------ */
 
 
-.main {
-    display: flex;
-    background-image: url('./media/cpu_img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    margin: 0px;
-}
-
-.main p {
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-size: 50px;
-}

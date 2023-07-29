@@ -1,0 +1,23 @@
+/* ------------------------------------------------ */
+/*                          MAIN                    */
+/* ------------------------------------------------ */
+
+
+.main {
+    display: flex;
+    background-color: black;
+    height: 500px;
+    margin: 0px;
+    border-top: 1px solid purple;
+    justify-content: center;
+    /* background-image: url('/media/matrix_has_you.png'); */
+    /* background-position: ce; */
+    /* background-size: cover; */
+}
+
+.main p {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
