@@ -1,15 +1,22 @@
 /* ------------------------------------------------ */
 /*                          MAIN                    */
 /* ------------------------------------------------ */
-
-
+/* Hide scrollbar on webkit-based browsers */
+body::-webkit-scrollbar {
+    width: 0em; /* Width of the scrollbar (you can adjust this as needed) */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb of the scrollbar */
+}
+  
 .main {
     display: flex;
-    background-color: black;
-    height: 500px;
+    height: 700px;
     margin: 0px;
-    border-top: 1px solid purple;
     justify-content: center;
+    background-color: #000;
+    animation: moveNumbers 10s linear infinite;
     /* background-image: url('/media/matrix_has_you.png'); */
     /* background-position: ce; */
     /* background-size: cover; */
@@ -20,5 +27,20 @@
     font-family: 'Rubik', sans-serif;
     font-size: 70px;
     text-align: center;
+    user-select: none;
 }
 
+.video_main {
+    display: flex;
+    width: 100%;
+}
+
+video {
+    pointer-events: none;
+    width: 300px;
+    height: auto;
+    opacity: 0.2;
+    position: relative;
+    left: 500px;
+    bottom: 420px;
+}
