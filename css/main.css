@@ -3,23 +3,20 @@
 /* ------------------------------------------------ */
 /* Hide scrollbar on webkit-based browsers */
 body::-webkit-scrollbar {
-    width: 0em; /* Width of the scrollbar (you can adjust this as needed) */
+    width: 0em;
 }
-  
+
 body::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Hide the thumb of the scrollbar */
+    background-color: transparent;
 }
-  
+
 .main {
     display: flex;
-    height: 700px;
+    height: 550px;
     margin: 0px;
     justify-content: center;
-    background-color: #000;
+    background-color: black;
     animation: moveNumbers 10s linear infinite;
-    /* background-image: url('/media/matrix_has_you.png'); */
-    /* background-position: ce; */
-    /* background-size: cover; */
 }
 
 .main p {
@@ -43,4 +40,69 @@ video {
     position: relative;
     left: 500px;
     bottom: 420px;
+}
+
+/* Profiles Containers */
+
+.profiles {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.profile_one {
+    /* position: relative; */
+    left: 30px;
+    height: 200px;
+    width: 400px;
+    background-color: lightblue;
+}
+
+.profile_two {
+    width: 375px;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 60px;
+    position: relative;
+    bottom: 50px;
+}
+
+.profile_three {
+    width: 520px;
+    background-color: lightblue;
+}
+
+/* Profiles Customization */
+
+
+/* TWO  */
+.profile_two img {
+    width: 90px;
+    border: 1px solid black;
+    /* border-rad   ius: 100px; */
+    margin-top: 20px;
+    user-select: none;
+}
+
+.profile_two {
+    background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.profile_two:hover {
+    /* transform: scale(1.1); */
+    bottom: 90px;
+}
+
+.profile_two p {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    /* background-color: black; */
+    width: 205px;
+    margin-left: 85px;
+    user-select: none;
 }
