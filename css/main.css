@@ -15,7 +15,8 @@ body::-webkit-scrollbar-thumb {
     height: 550px;
     margin: 0px;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url('../media/castle_old.png');
     animation: moveNumbers 10s linear infinite;
 }
 
@@ -43,9 +44,14 @@ video {
 }
 
 /* Profiles Containers */
+.profile_background {
+    background-color: aqua;
+    background-image: url('../media/castle_old.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .profiles {
-    background-color: black;
     height: 700px;
     width: 1000px;
     display: flex;
@@ -57,7 +63,7 @@ video {
 .profile_one, .profile_three {
     position: relative;
     bottom: 10px;
-    transition: 0.3s
+    transition: 0.4s;
 }
 
 .profile_one, .profile_two, .profile_three {
@@ -72,7 +78,7 @@ video {
     margin-right: 20px;
     position: relative; 
     bottom: 50px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* -------      IMAGE     -------- */
