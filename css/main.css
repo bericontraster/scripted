@@ -46,63 +46,69 @@ video {
 
 .profiles {
     background-color: black;
+    height: 700px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
-.profile_one {
-    /* position: relative; */
-    left: 30px;
-    height: 200px;
+.profile_one, .profile_three {
+    position: relative;
+    bottom: 10px;
+    transition: 0.3s
+}
+
+.profile_one, .profile_two, .profile_three {
     width: 400px;
-    background-color: lightblue;
+    height: 250px;  
+    border-radius: 5px;
+    background-image: linear-gradient(315deg, orange 5%, black 70%, orange );
 }
 
 .profile_two {
-    width: 375px;
-    flex: 1;
-    margin-left: 60px;
-    margin-right: 60px;
-    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative; 
     bottom: 50px;
+    transition: 0.3s;
 }
 
-.profile_three {
-    width: 520px;
-    background-color: lightblue;
-}
+/* -------      IMAGE     -------- */
 
-/* Profiles Customization */
-
-
-/* TWO  */
 .profile_two img {
     width: 90px;
-    border: 1px solid black;
-    /* border-rad   ius: 100px; */
-    margin-top: 20px;
-    user-select: none;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.profile_one img {
+    width: 90px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.profile_three img {
+    width: 90px;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
-.profile_two {
-    background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
-    text-align: center;
-    border-radius: 5px;
-    transition: 0.5s;
-}
+/* ------      TEXT      ------ */
 
-.profile_two:hover {
-    /* transform: scale(1.1); */
-    bottom: 90px;
-}
-
-.profile_two p {
+.profile_two, .profile_three, .profile_one, p {
     color: white;
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
-    /* background-color: black; */
-    width: 205px;
-    margin-left: 85px;
+    text-align: center;
     user-select: none;
+}
+
+/* ------      HOVER      ------ */
+
+.profile_two:hover {
+    bottom: 75px;
+}
+
+.profile_one:hover, .profile_three:hover {
+    bottom: 30px;
 }
