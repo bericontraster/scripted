@@ -12,7 +12,7 @@ body::-webkit-scrollbar-thumb {
 
 /* ------      MAIN      ------ */
 .main_bg {
-    background-image: url('/media/spidy.jpg');
+    background-image: url('../media/spidy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
