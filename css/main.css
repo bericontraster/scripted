@@ -10,17 +10,27 @@ body::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
+/* ------      MAIN      ------ */
+.main_bg {
+    background-image: url('/media/spidy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+}
+
 .main {
     display: flex;
-    height: 550px;
+    height: 500px;
     margin: 0px;
     justify-content: center;
-    background-image: url('../media/castle_old.png');
-    animation: moveNumbers 10s linear infinite;
 }
 
 .main p {
     color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 0px 30px;
     font-family: 'Rubik', sans-serif;
     font-size: 70px;
     text-align: center;
@@ -43,15 +53,8 @@ video {
 }
 
 /* Profiles Containers */
-.profile_background {
-    background-image: url('../media/castle_old.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-}
-
 .profiles {
-    height: 700px;
+    height: 550px;
     width: 1000px;
     display: flex;
     flex-direction: row;
@@ -67,16 +70,18 @@ video {
 
 .profile_one, .profile_two, .profile_three {
     width: 400px;
-    height: 250px;  
-    border-radius: 5px;
-    background-image: linear-gradient(315deg, orange 5%, black 70%, orange );
+    height: 300px;  
+    /* border-radius: 5px; */
+    /* background: radial-gradient(circle at 50% 90%,#944ca0 50%,#944ca0  9.5%); */
+    background-color: black;
+    /* border: 1px solid #284685; */
 }
 
 .profile_two {
     margin-left: 20px;
     margin-right: 20px;
     position: relative; 
-    bottom: 50px;
+    bottom: 10px;
     transition: 0.4s;
 }
 
@@ -109,11 +114,7 @@ video {
 }
 
 /* ------      HOVER      ------ */
-
-.profile_two:hover {
+.profile_one:hover, .profile_three:hover, .profile_two:hover{
     bottom: 75px;
-}
-
-.profile_one:hover, .profile_three:hover {
-    bottom: 30px;
+    opacity: 0.9;
 }
