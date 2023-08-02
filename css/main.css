@@ -15,7 +15,6 @@ body::-webkit-scrollbar-thumb {
     height: 550px;
     margin: 0px;
     justify-content: center;
-    /* background-color: black; */
     background-image: url('../media/castle_old.png');
     animation: moveNumbers 10s linear infinite;
 }
@@ -45,10 +44,10 @@ video {
 
 /* Profiles Containers */
 .profile_background {
-    background-color: aqua;
     background-image: url('../media/castle_old.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 .profiles {
