@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-video {
+/* video {
     pointer-events: none;
     width: 300px;
     height: auto;
@@ -50,7 +50,7 @@ video {
     position: relative;
     left: 500px;
     bottom: 420px;
-}
+} */
 
 /* Profiles Containers */
 .profiles {

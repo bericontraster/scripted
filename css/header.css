@@ -96,6 +96,7 @@ body {
     /* position: relative; */
     height: 33px;
     background-color: black;
+    bottom: -15px;
 }
 
 .footer p {
