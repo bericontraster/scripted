@@ -1,0 +1,9 @@
+.background_about {
+    background-color: purple;
+    height: 400px;
+}
+
+.about p {
+    color: black;
+    background-color: black;
+}
