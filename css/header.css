@@ -22,7 +22,6 @@ body {
 /* -----      TITLE HEADER     ------ */
 .header_title {
     width: 300px;
-    text-align: center;
 }
 .header_title a {
     color: red;
@@ -31,6 +30,8 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 .header_title p {
+    text-align: center;
+    justify-content: center;
     margin-top: 17px;
 }
 
@@ -40,21 +41,25 @@ body {
     flex: 1;
     margin: 0px 30px;
     font-size: 20px;
+    text-align: center;
+    min-width: 500px;
+}
+.a_two, .a_three {
+    margin-left: 30px;
 }
 .header_navigation a {
     color: black;
     transition: 0.3s;
-    padding: 0px 30px;
-    font-weight: bold;
-    margin-right: 30px;
+    padding: 5px 30px;
     text-decoration: none;
     background-color: white;
 }
 .header_navigation p {
-    margin-top: 17px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 .header_navigation a:hover {
-    padding: 1px 20px;
+    padding: 5px 20px;
     box-shadow: -5px 5px red;
 }
 
@@ -63,23 +68,26 @@ body {
 .header_social_anchors {
     width: 300px;
     text-align: center;
+    min-width: 200px;
 }
 [class='fa fa-github'] {
     color: brown;
     font-size: 40px;
     transition: 0.3S;
     margin-top: 13px;
+    margin-left: 100px;
 }
-[class='fa fa-instagram']{
+[class='fa fa-instagram'] {
     margin-left: 10px;
     color: brown;
     font-size: 40px;
     transition: 0.3S;
+    /* margin-left: 40px; */
 }
 
 
 .main {
-    height: 100px;
+    height: 200px;
     width: auto;
     background-color: whitesmoke;
 }
