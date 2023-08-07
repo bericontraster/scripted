@@ -7,7 +7,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main {
-    height: 700px;
+    height: 1000px;
     width: auto;
     background-position: center;
     background-size: cover;
@@ -15,8 +15,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .welcome {
+    position: relative;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     justify-content: center;
 }
 
@@ -42,46 +43,41 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-evenly;
 }
 
-.profile_one, .profile_three {
-    position: relative;
-    transition: 0.4s;
-}
 
 .profile_one, .profile_two, .profile_three {
     width: 400px;
     height: 300px;  
-    border-radius: 5px;
-    background: radial-gradient(circle at 50% 90%,#944ca0 50%,#944ca0  9.5%);
+    position: relative;
     background-color: black;
-    border: 1px solid #284685;
+    transition: bottom 0.5s ease 0s; 
+    bottom: 0; 
+
 }
 
- .profile_two {
+.profile_two {
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
-    transition: 0.4s;
 }
+
+
+/* -----      TEXT      ----- */
+.profile_one, .profile_two, .profile_three {
+    text-align: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+}
+
 
 /* -------      IMAGE     -------- */
-.profile_two img {
+.profile_two img, .profile_one img, .profile_three img {
     width: 90px;
     margin-top: 15px;
-    border-radius: 10px;    
-}
-.profile_one img {
-    width: 90px;
-    margin-top: 15px;
-    border-radius: 10px;
-}
-.profile_three img {
-    width: 90px;
-    margin-top: 15px;
-    border-radius: 10px;
 }
 
+
 /* ------      HOVER      ------ */
-.profile_one:hover, .profile_three:hover, .profile_two:hover{
+.profile_one:hover, .profile_two:hover, .profile_three:hover {
     bottom: 75px;
-    opacity: 0.9;
 }

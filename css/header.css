@@ -1,6 +1,8 @@
 /* BODY MARGIN */
 body {
     margin: 0;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 
@@ -86,3 +88,20 @@ body {
     /* margin-left: 40px; */
 }
 
+
+
+
+/* ----- FOOTER ----- */
+.footer {
+    height: 30px;
+    background-color: black;
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+    position: relative;
+    top: 3px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
