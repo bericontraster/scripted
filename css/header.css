@@ -43,6 +43,7 @@ body {
     font-size: 20px;
     text-align: center;
     min-width: 500px;
+    border-bottom: 1px solid brown;
 }
 .a_two, .a_three {
     margin-left: 30px;
@@ -85,9 +86,3 @@ body {
     /* margin-left: 40px; */
 }
 
-
-.main {
-    height: 200px;
-    width: auto;
-    background-color: whitesmoke;
-}

@@ -1,7 +1,3 @@
-/* ------------------------------------------------ */
-/*                          MAIN                    */
-/* ------------------------------------------------ */
-/* Hide scrollbar on webkit-based browsers */
 body::-webkit-scrollbar {
     width: 0em;
 }
@@ -10,51 +6,35 @@ body::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
-/* ------      MAIN      ------ */
-.main_bg {
-    background-image: url('../media/spidy.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+.main {
+    height: 700px;
+    width: auto;
     background-position: center;
-    margin-bottom: 0;
+    background-size: cover;
+    background-image: url('../media/spidy.jpg');
 }
 
-.main {
+.welcome {
     display: flex;
-    height: 500px;
-    margin: 0px;
+    margin-bottom: 200px;
     justify-content: center;
 }
 
-.main p {
-    color: white;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding: 0px 30px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 70px;
+.welcome p {
+    margin: 0;
     text-align: center;
-    user-select: none;
+    position: relative;
+    top: 40px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    padding: 0 40px;
+    background-color: black;
+    border-radius: 4px;
 }
 
-/* .video_main {
-    display: flex;
-    width: 100%;
-} */
-
-/* video {
-    pointer-events: none;
-    width: 300px;
-    height: auto;
-    opacity: 0.2;
-    position: relative;
-    left: 500px;
-    bottom: 420px;
-} */
-
-/* Profiles Containers */
 .profiles {
-    height: 550px;
+    height: 350px;
     width: 1000px;
     display: flex;
     flex-direction: row;
@@ -64,33 +44,30 @@ body::-webkit-scrollbar-thumb {
 
 .profile_one, .profile_three {
     position: relative;
-    bottom: 10px;
     transition: 0.4s;
 }
 
 .profile_one, .profile_two, .profile_three {
-    /* width: 400px; */
-    /* height: 300px;   */
-    /* border-radius: 5px; */
-    /* background: radial-gradient(circle at 50% 90%,#944ca0 50%,#944ca0  9.5%); */
-    /* background-color: black; */
-    /* border: 1px solid #284685; */
+    width: 400px;
+    height: 300px;  
+    border-radius: 5px;
+    background: radial-gradient(circle at 50% 90%,#944ca0 50%,#944ca0  9.5%);
+    background-color: black;
+    border: 1px solid #284685;
 }
 
-/* .profile_two {
+ .profile_two {
     margin-left: 20px;
     margin-right: 20px;
-    position: relative; 
-    bottom: 10px;
+    position: relative;
     transition: 0.4s;
-} */
+}
 
 /* -------      IMAGE     -------- */
-/* 
 .profile_two img {
     width: 90px;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 .profile_one img {
     width: 90px;
@@ -103,18 +80,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-/* ------      TEXT      ------ */
-
-.profile_two, .profile_three, .profile_one, p {
-    color: white;
-    font-family: 'Kanit', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    user-select: none;
-}
-
 /* ------      HOVER      ------ */
 .profile_one:hover, .profile_three:hover, .profile_two:hover{
     bottom: 75px;
     opacity: 0.9;
-} */
+}
