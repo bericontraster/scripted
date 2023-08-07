@@ -1,0 +1,21 @@
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.more {
+    height: 654px;
+    background-color: black;
+}
+
+.more_one h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    font-family: 'Rubik', sans-serif;
+}
