@@ -105,3 +105,11 @@ body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+/* ---------------- SCROLL BAR ------------------- */
+
+::-webkit-scrollbar {
+    display: none;
+}

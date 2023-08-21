@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.container {
+    height: auto;
+    width: 850px;
+    margin: 50px auto;
+    background-color: black;
+}
+
+.about-me p {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-me p1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* HACK THE BOX */
+.htb {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.htb p {
+    margin-bottom: 20px;
+}
+
+.htb img {
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.htb img:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
